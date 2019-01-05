@@ -1,0 +1,4 @@
+#Sun Jan 06 00:23:06 EET 2019
+base.0=E\:\\AndroidProjects\\ClickerGame\\ClickerGame\\android\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex
