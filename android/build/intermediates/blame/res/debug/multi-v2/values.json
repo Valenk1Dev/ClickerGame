@@ -1,34 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\AndroidProjects\\ClickerGame\\ClickerGame\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Install\\ClickerGame\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "E:\\AndroidProjects\\ClickerGame\\ClickerGame\\android\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "59",
-                        "endColumns": "48",
-                        "endOffsets": "103"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                },
-                {
-                    "source": "E:\\AndroidProjects\\ClickerGame\\ClickerGame\\android\\res\\values\\styles.xml",
+                    "source": "D:\\Install\\ClickerGame\\android\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "19",
+                        "startOffsets": "17",
                         "endLines": "9",
                         "endColumns": "12",
-                        "endOffsets": "484"
+                        "endOffsets": "475"
                     },
                     "to": {
                         "startLines": "3",
@@ -37,6 +20,23 @@
                         "endLines": "10",
                         "endColumns": "12",
                         "endOffsets": "562"
+                    }
+                },
+                {
+                    "source": "D:\\Install\\ClickerGame\\android\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "48",
+                        "endOffsets": "100"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
                     }
                 }
             ]
