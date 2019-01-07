@@ -1,18 +1,20 @@
-package com.mygdx.game.States;
+package com.mygdx.game.states;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.MyGdxGame;
 
-public class MenuState extends State {
+public class CharacterCreationState extends State  {
 
-    Texture background;
+        Texture enemy;
 
-    public MenuState(GameStateManager gsm) {
+    public CharacterCreationState(GameStateManager gsm)
+    {
         super(gsm);
 
-        background = new Texture("background.jpg");
+        enemy = new Texture("enemy.jpg");
+
     }
+
 
     @Override
     protected void handleInput() {
@@ -29,16 +31,13 @@ public class MenuState extends State {
 
         batch.begin();
 
-        batch.draw(background,0,0, MyGdxGame.HEIGHT, MyGdxGame.WIDTH);
+        batch.draw(enemy, 50 , 50 , 250, 250);
 
         batch.end();
-
     }
 
     @Override
     public void dispose() {
-
-        background.dispose();
 
     }
 }
