@@ -1,9 +1,6 @@
 package com.mygdx.game.items;
 
 
-
-
-
 public abstract class Item {
 
    public enum item_types {WEAPON, ARMOR}

@@ -4,8 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.MyGdxGame;
+import com.sun.xml.internal.bind.v2.TODO;
+
 
 public class MainMenuState extends State {
+
+    public final int PLAY_BUTTON_WIDTH = 600;
+    public final int PLAY_BUTTON_HEIGHT = 250;
+    public final int PLAY_BUTTON_Y = 1600;
+    public final int PLAY_BUTTON_X = (MyGdxGame.WIDTH - PLAY_BUTTON_WIDTH) / 2;
 
     Texture background;
     Texture enemy;
@@ -14,13 +21,12 @@ public class MainMenuState extends State {
     public MainMenuState(GameStateManager gsm) {
         super(gsm);
 
-        background = new Texture("background.jpg");
-        enemy = new Texture("bird.png");
+        //background = new Texture("background.jpg");
+        // enemy = new Texture("bird.png");
         playBtn = new Texture("playBtn.png");
 
 
         //camera.setToOrtho(false, MyGdxGame.WIDTH / 2, MyGdxGame.HEIGHT / 2);
-
 
 
     }
@@ -28,9 +34,24 @@ public class MainMenuState extends State {
     @Override
     protected void handleInput() {
 
+        //TODO Правильно высчитать Y
+
+        /*
+            if (Gdx.input.getX() > PLAY_BUTTON_X &&
+                Gdx.input.getX() < PLAY_BUTTON_X + PLAY_BUTTON_WIDTH
+                    && Gdx.input.getY() < 780
+                 && Gdx.input.getY() > 530 ) {
+            if (Gdx.input.isTouched()) {
+                gsm.set(new CharacterCreationState(gsm));
+            }
+        }
+        */
+
         if (Gdx.input.isTouched())
         {
-            gsm.set(new CharacterCreationState(gsm));
+            System.out.println("y =" +Gdx.input.getY());
+            System.out.println( "x =" +Gdx.input.getX());
+
         }
 
     }
@@ -44,11 +65,12 @@ public class MainMenuState extends State {
     @Override
     public void render(SpriteBatch batch) {
 
-      // batch.setProjectionMatrix(camera.combined);
+
+        // batch.setProjectionMatrix(camera.combined);
         batch.begin();
 
-        batch.draw(background,0,0, MyGdxGame.WIDTH, MyGdxGame.HEIGHT);
-        batch.draw(playBtn, ((MyGdxGame.WIDTH - playBtn.getWidth()) / 2) , MyGdxGame.HEIGHT /2 );
+        // batch.draw(background,0,0, MyGdxGame.WIDTH, MyGdxGame.HEIGHT);
+        batch.draw(playBtn, PLAY_BUTTON_X, PLAY_BUTTON_Y , PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIGHT);
 
         batch.end();
 
@@ -57,7 +79,7 @@ public class MainMenuState extends State {
     @Override
     public void dispose() {
 
-        background.dispose();
+        playBtn.dispose();
 
     }
 }
