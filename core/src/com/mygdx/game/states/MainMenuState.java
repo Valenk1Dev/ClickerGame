@@ -4,15 +4,15 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.MyGdxGame;
-import com.sun.xml.internal.bind.v2.TODO;
+//import com.sun.xml.internal.bind.v2.TODO;
 
 
 public class MainMenuState extends State {
 
-    public final int PLAY_BUTTON_WIDTH = 600;
-    public final int PLAY_BUTTON_HEIGHT = 250;
-    public final int PLAY_BUTTON_Y = 1600;
-    public final int PLAY_BUTTON_X = (MyGdxGame.WIDTH - PLAY_BUTTON_WIDTH) / 2;
+    public final int PLAY_BUTTON_WIDTH = (int)Math.round(Gdx.graphics.getWidth() * 0.417);
+    public final int PLAY_BUTTON_HEIGHT = (int)Math.round(Gdx.graphics.getHeight() * 0.097);
+    public final int PLAY_BUTTON_Y = (Gdx.graphics.getHeight() - PLAY_BUTTON_HEIGHT) / 2;;
+    public final int PLAY_BUTTON_X = (Gdx.graphics.getWidth() - PLAY_BUTTON_WIDTH) / 2;
 
     Texture background;
     Texture enemy;
