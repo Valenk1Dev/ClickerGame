@@ -11,7 +11,7 @@ public class MainMenuState extends State {
 
     public final int PLAY_BUTTON_WIDTH = (int)Math.round(Gdx.graphics.getWidth() * 0.417);
     public final int PLAY_BUTTON_HEIGHT = (int)Math.round(Gdx.graphics.getHeight() * 0.097);
-    public final int PLAY_BUTTON_Y = (Gdx.graphics.getHeight() - PLAY_BUTTON_HEIGHT) / 2;;
+    public final int PLAY_BUTTON_Y = (Gdx.graphics.getHeight() - PLAY_BUTTON_HEIGHT) / 5*4;;
     public final int PLAY_BUTTON_X = (Gdx.graphics.getWidth() - PLAY_BUTTON_WIDTH) / 2;
 
     Texture background;
